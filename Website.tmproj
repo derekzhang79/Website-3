@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>My theme with jquery.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -166,18 +164,9 @@
 			<integer>0</integer>
 		</dict>
 	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>About page.html</string>
-		<string>Change Log.html</string>
-		<string>My theme with jquery.html</string>
-		<string>Photos page table.html</string>
-		<string>post types HTML layout.html</string>
-		<string>My theme with jquery test.html</string>
-	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1, 4}, {1278, 774}}</string>
+	<string>{{203, 4}, {1067, 774}}</string>
 </dict>
 </plist>
