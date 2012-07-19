@@ -322,22 +322,29 @@ tags = {"tbegin":"""<table style="text-align: middle; margin-right:auto; margin-
 </table>""","tre":"""</tr>""","trb":"""<tr class="{0}">""","tdb":"""<td>""","img":"""<img class="{0}" src="{1}" alt="{2}" />""","divb":"""<div class="{0}">""","dive":"""</div>""","a":"""<a href="{0}">{1}</a>""","p":"""<p>{0}</p>""","tde":"""</td>"""}
 
 
-def build_table(r=2):
+def build_table(col=2):
     """docstring for build_table"""
     global tags
     n = "\n"
     table = """"""
     table += tags["tbegin"] + n
     num = len(all_sets._registry)
-    rows = int(math.ceil(num/r))
-    def write(r):
+    rows = int(math.ceil(num/col))
+    def write(num_c): # does the work for each row
+        nonlocal num
+        temp_1 = """"""
+        temp_2 = """"""
+        for c in range(num_c,0,-1):
+            item = i*num_c-c
+            cur_set = all_sets.set(item) if item<num else None
         return None
         # this is a work in progress but will simplify what's below. Hopefully. :)
     for i in range(1,rows+1): # start at one to make the math easy. :P
         set1 = all_sets.set(i*3-3) if (i*3-3)<num else None
+                    # this will become i,num_c,c
         set2 = all_sets.set(i*3-2) if (i*3-2)<num else None
         set3 = None
-	# set3 = all_sets.set(i*3-1) if (i*3-1)<num else None
+	    # set3 = all_sets.set(i*3-1) if (i*3-1)<num else None
         img1 = all_images.find_sid(set1["sid"]) if set1 else None
         img2 = all_images.find_sid(set2["sid"]) if set2 else None
         img3 = all_images.find_sid(set3["sid"]) if set3 else None
