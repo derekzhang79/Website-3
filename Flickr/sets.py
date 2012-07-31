@@ -331,7 +331,7 @@ def build_table(col=2):
     num = len(all_sets._registry)
     rows = int(math.ceil(num/col))
     def write(num_c): # does the work for each row
-        nonlocal num
+        # nonlocal num
         temp_1 = """"""
         temp_2 = """"""
         for c in range(num_c,0,-1):
